@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+     name: tic-toc-toe
+spec:
+    selector: 
+      matchLabels: 
+        app: tic-toc-toe
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: tic-toc-toe
+      spec: 
+        containers:
+        - name: tic-toc-toe
+          image: b2255ec751ce
+          ports: 
+          - containerPort: 80    

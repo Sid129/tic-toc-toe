@@ -1,0 +1,9 @@
+<h1>TIC-TOC-TOE</h1>
+<button (click)=newgame()>new Game</button>
+<div *ngIf="winner"><h1>'{{winnera}}' won the game</h1></div>
+<main>
+<app-squre *ngFor="let val of squares;let i=index"
+[value]="val"
+(click)="makeMove(i)">
+</app-squre>
+</main>

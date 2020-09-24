@@ -1,0 +1,10 @@
+main{
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    grid-gap:0px;
+}
+
+app-square{
+    border:1px solid gray;
+    height:200px ;
+}
